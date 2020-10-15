@@ -1,5 +1,6 @@
 # Rent365
 Rent365 - Frontend
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d4f4617-5de9-4e27-9742-081726162ac1/deploy-status)](https://app.netlify.com/sites/laughing-perlman-9e96d7/deploys)
 ## How to Contribute
 --fork the Repo
 --clone the Repo to your local machine
