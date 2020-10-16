@@ -44,6 +44,12 @@ main {
 }
 
 /**Header*/
+.navbar-light .navbar-toggler {
+  border: none;
+}
+.navbar-light .navbar-toggler:focus {
+  border: none;
+}
 .navbar {
   box-shadow: 0 7px 21px rgba(0,0,0,0.1);
 }
@@ -53,7 +59,37 @@ main {
 .navbar-light .navbar-nav .nav-link, .home, .cart {
   color: #000;
 }
-
 .navbar-light .navbar-nav .nav-link:hover {
-  color: goldenrod;
+  color: #FF3300;
+}
+.orders, .saved-items {
+  color: #000;
+}
+.orders:hover,
+.saved-items:hover,
+.home:hover,
+.cart:hover {
+  text-decoration: none;
+  color: #FF3300;
+}
+button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.signinBtn {
+  background-color: #EEEEEE;
+  color: #000;
+}
+.signinBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.signupBtn {
+  background-color: #FFFFCC;
+  color: #000;
+}
+.signupBtn:hover {
+  background-color: #FF3300;
+  color: #fff;
 }
