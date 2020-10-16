@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
       <div className="row header">
-         <Navbar>
+         <Navbar bg="light" expand="lg">
              <Navbar.Brand>
                  <Link to="/" className="navbar-brand">Rent365</Link>
              </Navbar.Brand>
