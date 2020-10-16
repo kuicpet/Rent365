@@ -17,7 +17,6 @@ const Header = () => {
     }
 
     return (
-      <div className="row header">
          <Navbar bg="light" expand="lg">
              <Navbar.Brand>
                  <Link to="/" className="navbar-brand">Rent365</Link>
@@ -47,14 +46,13 @@ const Header = () => {
                               <Link to="/signin" className="mx-2">Login</Link>
                           </Nav.Link>
                           <Nav.Link>
-                              <Link to="/signup" className="mx-5">Cart</Link>
+                              <Link to="/cart" className="mx-5">Cart</Link>
                           </Nav.Link>
                        </Nav>
                      )}
                  </Nav>
              </Navbar.Collapse>
          </Navbar>
-      </div>
     );
 }
 

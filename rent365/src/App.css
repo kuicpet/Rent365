@@ -17,6 +17,9 @@ body {
   align-items: center;
   justify-content: center;
   line-height: 1.5;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -29,6 +32,10 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 90vh;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 .row {
