@@ -31,13 +31,29 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .container-fluid {
   padding: 0;
+  margin: 0;
 }
 
 .row {
   width: 100%;
+}
+
+/**Header*/
+.navbar {
+  box-shadow: 5px 5px 25px rgba(0,0,0,0.5);
+}
+.bg-light {
+  background-color: #fff !important;
+}
+.navbar-light .navbar-nav .nav-link, .home, .cart {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: goldenrod;
 }
