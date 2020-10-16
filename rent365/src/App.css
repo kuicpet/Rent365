@@ -78,12 +78,13 @@ button {
   border-radius: 5px;
 }
 .signinBtn {
-  background-color: #EEEEEE;
+  background-color: rgba(0,0,0,0.1);
   color: #000;
 }
 .signinBtn:hover {
   background-color: #000;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .signupBtn {
   background-color: #FFAB91;
@@ -92,4 +93,5 @@ button {
 .signupBtn:hover {
   background-color: #FF3300;
   color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
