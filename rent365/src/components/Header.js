@@ -44,10 +44,10 @@ const Header = () => {
                               <Link to="/" className="mx-5">Home</Link>
                           </Nav.Link>
                           <Nav.Link>
-                              <Link to="/signin" className="mx-2">Sign In</Link>
+                              <Link to="/signin" className="mx-2">Login</Link>
                           </Nav.Link>
                           <Nav.Link>
-                              <Link to="/signup" className="mx-5">Sign Up</Link>
+                              <Link to="/signup" className="mx-5">Cart</Link>
                           </Nav.Link>
                        </Nav>
                      )}
