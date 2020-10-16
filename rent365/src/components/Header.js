@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 
 const Header = () => {
@@ -42,9 +42,21 @@ const Header = () => {
                           <Nav.Link>
                               <Link to="/" className="mx-5">Home</Link>
                           </Nav.Link>
-                          <Nav.Link>
-                              <Link to="/signin" className="mx-2">Login</Link>
-                          </Nav.Link>
+                          <NavDropdown title="Login">
+                            <NavDropdown.Item>
+                                <Link to="/signin" className="text-center">Login</Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link to="/signin" className="text-center">Create an Account</Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider/>
+                            <NavDropdown.Item>
+                                <Link to="/" className="text-center">Orders</Link>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Link to="/signin" className="text-center">Saved Items</Link>
+                            </NavDropdown.Item>
+                          </NavDropdown>
                           <Nav.Link>
                               <Link to="/cart" className="mx-5">Cart</Link>
                           </Nav.Link>
