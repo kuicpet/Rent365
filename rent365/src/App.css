@@ -45,7 +45,7 @@ main {
 
 /**Header*/
 .navbar {
-  box-shadow: 5px 5px 25px rgba(0,0,0,0.5);
+  box-shadow: 0 7px 21px rgba(0,0,0,0.1);
 }
 .bg-light {
   background-color: #fff !important;
