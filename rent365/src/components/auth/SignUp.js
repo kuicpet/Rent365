@@ -16,15 +16,17 @@ const SignUp = (props) => {
     return (
         <div className="row text-center">
             <div className="col-sm-12 signup">
-                <h3>Rent365</h3>
+                <h3>Rent365 | Sign up</h3>
+                <hr/>
+                <p>Create your Rent365 account! </p>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div>
                         <label htmlFor="username"></label>
                         <input
                             type="text"
                             name="username"
-                            className="username pl-5"
-                            placeholder="username"
+                            className="username"
+                            placeholder="Username"
                             ref={register({
                               required: "Username field is required",
                               maxLength: {
@@ -49,8 +51,8 @@ const SignUp = (props) => {
                         <input
                             type="email"
                             name="email"
-                            className="email2 pl-5"
-                            placeholder="email"
+                            className="email"
+                            placeholder="Email"
                             ref={register({
                               required: "Email field is required",
                               pattern: {
@@ -67,8 +69,8 @@ const SignUp = (props) => {
                         <input
                             type="password"
                             name="password"
-                            className="pswd pl-5"
-                            placeholder="password (min 8)"
+                            className="pswd"
+                            placeholder="Password (min 8)"
                             ref={register({
                               required: "Password field is required",
                               minLength: {
@@ -85,8 +87,8 @@ const SignUp = (props) => {
                         <input
                             type="password"
                             name="confirm_password"
-                            className="pswd pl-5"
-                            placeholder="confirm password"
+                            className="pswd"
+                            placeholder="Confirm password"
                             ref={register({
                               required: "Confirm Password field is required",
                               validate: (value) => value === getValues().password || "Passwords donot match",
@@ -96,7 +98,7 @@ const SignUp = (props) => {
                         { errors.confirm_password && <p className="errors" >{errors.confirm_password.message}</p> }
                     </div>
                     <button
-                        className="btn btn-primary signBtn"
+                        className="signBtn"
                         type="submit"
                         disabled={ !isDirty || isSubmitting }
                     >

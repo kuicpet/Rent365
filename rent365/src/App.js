@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Products from './components/Products';
 import Search from "./components/Search";
+import SignUp from "./components/auth/SignUp";
 
 
 
@@ -13,6 +14,7 @@ const App = () => {
     <div className="container-fluid text-center">
       <Header/>
       <Search />
+      <SignUp/>
       <Products/>
       <Footer/>
     </div>

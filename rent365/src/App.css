@@ -113,7 +113,7 @@ button {
   padding: 0;
   margin: 0 auto;
 }
-input {
+#search {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,4 +144,18 @@ input {
 .searchBtn:hover {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background-color: #000;
+}
+
+/**SignUp*/
+.username, .email, .pswd {
+  width: 20rem;
+  padding: 0.1rem 1rem;
+  border: 1px solid #000;
+  margin: 0.2rem;
+}
+.signBtn {
+  margin: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.2rem 1.5rem;
 }
