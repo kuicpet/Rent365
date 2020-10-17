@@ -1,5 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
+import Header from "../Header";
 
 
 const SignUp = (props) => {
@@ -15,11 +17,11 @@ const SignUp = (props) => {
 
     return (
         <div className="row text-center">
+            <Header />
             <div className="col-sm-12 signup">
                 <h3>Rent365 | Sign up</h3>
-                <hr/>
                 <p>Create your Rent365 account! </p>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={handleSubmit(onSubmit)} className="my-5">
                     <div>
                         <label htmlFor="username"></label>
                         <input
@@ -105,6 +107,10 @@ const SignUp = (props) => {
                         Register
                     </button>
                 </form>
+            </div>
+            <div className="text-center col-sm-12">
+                <p>Already have an account?</p>
+                <Link to="/account/signin" className="signin">Login</Link>
             </div>
         </div>
     );
