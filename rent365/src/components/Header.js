@@ -46,10 +46,10 @@ const Header = () => {
                           </Nav.Link>
                           <NavDropdown title="Login" class="drop">
                             <NavDropdown.Item className="my-1">
-                                <Link to="/account/signin" className="text-center signin px-5 py-1 signinBtn">Login</Link>
+                                <Link to="/account/signin" className="text-center signinBtn px-5 py-1 signinBtn">Login</Link>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
-                                <Link to="/account/signup" className="text-center signup px-3 py-1 signupBtn">Create an Account</Link>
+                                <Link to="/account/signup" className="text-center signupBtn px-3 py-1 signupBtn">Create an Account</Link>
                             </NavDropdown.Item>
                             <NavDropdown.Divider/>
                             <NavDropdown.Item>

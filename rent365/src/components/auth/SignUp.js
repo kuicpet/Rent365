@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import Header from "../Header";
+import Heading from "../Heading";
 
 
 const SignUp = (props) => {
@@ -17,11 +17,11 @@ const SignUp = (props) => {
 
     return (
         <div className="row text-center">
-            <Header />
+            <Heading />
             <div className="col-sm-12 signup">
                 <h3>Rent365 | Sign up</h3>
                 <p>Create your Rent365 account! </p>
-                <form onSubmit={handleSubmit(onSubmit)} className="my-5">
+                <form onSubmit={handleSubmit(onSubmit)} className="mt-3">
                     <div>
                         <label htmlFor="username"></label>
                         <input
@@ -44,7 +44,7 @@ const SignUp = (props) => {
                                 message: "Username should contain only uppercase or lower case letters"
                                },
                              })}
-                            style={{ borderColor: errors.username && "red" }}
+                            style={{ borderBottomColor: errors.username && "red" }}
                         />
                         { errors.username && <p className="errors" >{errors.username.message}</p> }
                     </div>
@@ -62,7 +62,7 @@ const SignUp = (props) => {
                                 message: "Enter a valid e-mail address",
                               },
                              })}
-                            style={{ borderColor: errors.email && "red" }}
+                            style={{ borderBottomColor: errors.email && "red" }}
                         />
                         { errors.email && <p className="errors" >{errors.email.message}</p> } 
                     </div>
@@ -80,7 +80,7 @@ const SignUp = (props) => {
                                 message: "Password must have at least 8 characters"
                               }
                             })}
-                            style={{ borderColor: errors.password1 && "red" }}
+                            style={{ borderBottomColor: errors.password1 && "red" }}
                         />
                         { errors.password && <p className="errors" >{errors.password.message}</p> }
                     </div>
@@ -95,7 +95,7 @@ const SignUp = (props) => {
                               required: "Confirm Password field is required",
                               validate: (value) => value === getValues().password || "Passwords donot match",
                              })}
-                            style={{ borderColor: errors.confirm_password && "red" }}
+                            style={{ borderBottomColor: errors.confirm_password && "red" }}
                         />
                         { errors.confirm_password && <p className="errors" >{errors.confirm_password.message}</p> }
                     </div>

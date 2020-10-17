@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import Header from "../Header";
+import Heading from "../Heading";
 
 
 const SignIn = (props) => {
@@ -17,11 +17,11 @@ const SignIn = (props) => {
 
     return (
         <div className="row text-center">
-            <Header />
+            <Heading />
             <div className="col-sm-12 signup">
                 <h3>Rent365 | Sign in</h3>
                 <p>Log into your Rent365 account! </p>
-                <form onSubmit={handleSubmit(onSubmit)} className="my-5">
+                <form onSubmit={handleSubmit(onSubmit)} className="mt-3">
                     {/**<div>
                         <label htmlFor="username"></label>
                         <input
@@ -62,7 +62,7 @@ const SignIn = (props) => {
                                 message: "Enter a valid e-mail address",
                               },
                              })}
-                            style={{ borderColor: errors.email && "red" }}
+                            style={{ borderBottomColor: errors.email && "red" }}
                         />
                         { errors.email && <p className="errors" >{errors.email.message}</p> } 
                     </div>
@@ -80,7 +80,7 @@ const SignIn = (props) => {
                                 message: "Password must have at least 8 characters"
                               }
                             })}
-                            style={{ borderColor: errors.password1 && "red" }}
+                            style={{ borderBottomColor: errors.password1 && "red" }}
                         />
                         { errors.password && <p className="errors" >{errors.password.message}</p> }
                     </div>

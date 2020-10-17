@@ -65,13 +65,18 @@ main {
 }
 .orders, .saved-items {
   color: #000;
+  padding: 0.2rem 1rem;
 }
-.orders:hover,
-.saved-items:hover,
 .home:hover,
 .cart:hover {
   text-decoration: none;
   color: #FF3300;
+}
+.orders:hover,
+.saved-items:hover {
+  text-decoration: none;
+  color: #FF3300;
+  background-color: #FFF3E0;
 }
 button {
   outline: none;
@@ -87,6 +92,7 @@ button {
   background-color: #000;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-decoration: none;
 }
 .signupBtn {
   background-color: #FFF3E0;
@@ -97,6 +103,13 @@ button {
   background-color: #FF3300;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.dropdown-item:hover {
+  background-color: transparent;
+}
+.dropdown-item:active {
+  background-color: transparent;
 }
 
 /*Search**/
@@ -174,4 +187,19 @@ button {
 }
 .pswd {
   background: url("./images/icons/key.svg") no-repeat left 5px center;
+}
+.errors {
+  font-size: 0.8rem;
+  padding: 0;
+  font-weight: bold;
+  color: #FF3300;
+}
+.signin {
+  color: #000;
+  padding: 0.2rem 1.5rem;
+}
+.signin:hover {
+  text-decoration: none;
+  color: #FF3300;
+  background-color: #FFF3E0;
 }
