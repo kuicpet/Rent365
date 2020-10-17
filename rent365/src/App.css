@@ -142,20 +142,34 @@ button {
   font-weight: bold;
 }
 .searchBtn:hover {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 7px 21px 0 rgba(0,0,0,0.2);
   background-color: #000;
 }
 
 /**SignUp*/
 .username, .email, .pswd {
   width: 20rem;
-  padding: 0.1rem 1rem;
+  padding: 0.1rem 2rem;
   border: 1px solid #000;
   margin: 0.2rem;
 }
 .signBtn {
   margin: 0.5rem;
-  background-color: #000;
+  background-color: #FF3300;
   color: #fff;
   padding: 0.2rem 1.5rem;
+}
+.signBtn:hover {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 7px 21px 0 rgba(0,0,0,0.4);
+}
+.username {
+  background: url("./images/icons/user\ \(2\).svg") no-repeat left 5px center;
+}
+.email {
+  background: url("./images/icons/mail2.svg") no-repeat left 5px center;
+}
+.pswd {
+  background: url("./images/icons/key.svg") no-repeat left 5px center;
 }
