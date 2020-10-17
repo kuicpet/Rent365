@@ -81,7 +81,7 @@ button {
 .signinBtn {
   background-color: rgba(0,0,0,0.1);
   color: #000;
-  border: 2px solid #000;
+  border: 1px solid #000;
 }
 .signinBtn:hover {
   background-color: #000;
@@ -91,7 +91,7 @@ button {
 .signupBtn {
   background-color: #FFF3E0;
   color: #000;
-  border: 2px solid #FF3300;
+  border: 1px solid #FF3300;
 }
 .signupBtn:hover {
   background-color: #FF3300;
