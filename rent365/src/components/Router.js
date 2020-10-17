@@ -5,6 +5,7 @@ import App from "../App";
 import Product from "./Product";
 import SignUp from "./auth/SignUp";
 import SignIn from "./auth/SignIn";
+import Cart from "./Cart";
 
 class Router extends Component {
     render() {
@@ -15,6 +16,7 @@ class Router extends Component {
                     <Route path="/account/signup" component={ SignUp } />
                     <Route path="/account/signin" component={ SignIn } />
                     <Route path="/product/:uri" component={ Product } />
+                    <Route path="/cart" component={ Cart } />
                 </Switch>
             </BrowserRouter>
         );

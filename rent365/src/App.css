@@ -45,6 +45,9 @@ main {
 }
 
 /**Header*/
+.navbar-light .navbar-brand:hover {
+  color: #FF3300;
+}
 .navbar-light .navbar-toggler {
   border: none;
 }
@@ -206,4 +209,10 @@ button {
   text-decoration: none;
   color: #FF3300;
   background-color: #FFF3E0;
+}
+
+/**Cart*/
+.cart {
+  min-height: 100vh;
+  margin-top: 5rem;
 }
