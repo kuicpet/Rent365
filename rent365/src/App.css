@@ -108,20 +108,38 @@ button {
 }
 .form {
   display: flex;
-  max-width: 100%;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0 auto;
 }
 input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0.2rem 2rem;
   width: 400px;
-  max-width: 80%;
+  max-width: 100%;
   z-index: 1;
+  background: url("./images/icons/search\(1\).svg") no-repeat left 5px center
+}
+@media only screen and (max-width: 400px) {
+  .col-sm-12 {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .form {
+    flex-direction: column;
+    max-width: 80%;
+  }
 }
 .searchBtn {
   background-color: #FF3300;
   color: #fff;
+  font-weight: bold;
 }
 .searchBtn:hover {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
