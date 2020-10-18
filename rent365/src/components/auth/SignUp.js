@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import Heading from "../Heading";
+import Footer from "../Footer";
 
 
 const SignUp = (props) => {
@@ -112,6 +113,7 @@ const SignUp = (props) => {
                 <p>Already have an account?</p>
                 <Link to="/account/signin" className="signin">Login</Link>
             </div>
+            <Footer/>
         </div>
     );
 };

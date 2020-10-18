@@ -9,12 +9,13 @@ import Search from "./components/Search";
 
 
 class App extends Component{
+  
   render() {
     return (
       <div className="container-fluid text-center">
         <Header/>
         <Search />
-        <Products/>
+        <Products />
         <Footer/>
       </div>
     );

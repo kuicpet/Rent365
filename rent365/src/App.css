@@ -26,20 +26,10 @@ body {
 main {
   flex: 1 0 auto;
 }
-
-.products {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
 .container-fluid {
   padding: 0;
   margin: 0;
 }
-
 .row {
   width: 100%;
 }
@@ -213,7 +203,7 @@ button {
 
 /**Cart*/
 .cartSection {
-  min-height: 100vh;
+  
   margin-top: 5rem;
 }
 .shopCart {
@@ -242,4 +232,24 @@ button {
 }
 .login:hover {
   color: #000;
+}
+
+/**Products*/
+.products {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+@media only screen and (max-width: 400px) {
+  .products {
+    flex-direction: column;
+  }
+}
+
+/**Footer*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
