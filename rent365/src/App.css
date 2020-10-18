@@ -212,7 +212,34 @@ button {
 }
 
 /**Cart*/
-.cart {
+.cartSection {
   min-height: 100vh;
   margin-top: 5rem;
+}
+.shopCart {
+  stroke: #FF3300;
+  width: 10rem;
+  height: 10rem;
+  margin-top: 3rem;
+  padding: 0.5rem;
+  stroke-width: 1;
+}
+.shop {
+  color: #fff;
+  background-color: #FF3300;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+}
+.shop:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  box-shadow: 0 7px 21px 0 rgba(0,0,0,0.4);
+}
+.login {
+  color: #FF3300;
+  text-decoration: underline;
+}
+.login:hover {
+  color: #000;
 }
