@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Counter from "./Counter";
 
 
 
@@ -27,6 +28,7 @@ const Products = () => {
               </Link>
               <h5 className="prdt_name">{item.title}</h5>
               <p className="prdt_price">${item.price}</p>
+              <Counter/>
               <button className="add_cart">Add to Cart</button>
             </div>
           ))}
