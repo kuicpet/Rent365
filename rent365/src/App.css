@@ -246,7 +246,15 @@ button {
     flex-direction: column;
   }
 }
-
+.add_cart {
+  background-color: #FF3300;
+  color: #fff;
+  padding: 0.2rem 1rem;
+}
+.add_cart:hover {
+  background-color: #000;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
 /**Footer*/
 .footer {
   position: absolute;
