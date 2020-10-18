@@ -17,7 +17,7 @@ const Products = () => {
     return (
       <div className="products mb-5">
           {data.map((item, index) => (
-            <div key={index} className="col-sm-12 col-md-4 col-lg-4">
+            <div key={index} className="col-sm-12 col-md-4 col-lg-4 product">
               <Link>
                   <img
                     src={item.item_pic}
