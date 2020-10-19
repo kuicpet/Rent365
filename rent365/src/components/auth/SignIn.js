@@ -1,19 +1,31 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import axios from "axios";
 import Heading from "../Heading";
 import Footer from "../Footer";
 
 
 const SignIn = (props) => {
-
+    const history = useHistory();
     const { register, handleSubmit, errors, formState : { isDirty, isSubmitting }} = useForm({
         mode: "onChange",
         });
-    const onSubmit = (data, e) => {
+    const onSubmit = async (data, e) => {
         e.preventDefault();
         console.log("Data Submitted", data);
         // Api call here
+        await axios
+                .post("https://cors-anywhere.herokuapp.com/http://api-rent365.herokuapp.com/accounts/api/auth/login", data)
+                .then((res) => {
+                    console.log(res.data)
+                    if(res.data.token) {
+                        localStorage.setItem("user", JSON.stringify(res.data));
+                        history.push("/");
+                    }
+                }).catch((error) => {
+                    console.log(error)
+                });
     };
 
     return (
@@ -23,7 +35,7 @@ const SignIn = (props) => {
                 <h3>Rent365 | Sign in</h3>
                 <p>Log into your Rent365 account! </p>
                 <form onSubmit={handleSubmit(onSubmit)} className="mt-3">
-                    {/**<div>
+                    <div>
                         <label htmlFor="username"></label>
                         <input
                             type="text"
@@ -48,8 +60,8 @@ const SignIn = (props) => {
                             style={{ borderColor: errors.username && "red" }}
                         />
                         { errors.username && <p className="errors" >{errors.username.message}</p> }
-                            </div>*/}
-                    <div>
+                            </div>
+                    {/** <div>
                         <label htmlFor="email"></label>
                         <input
                             type="email"
@@ -66,7 +78,7 @@ const SignIn = (props) => {
                             style={{ borderBottomColor: errors.email && "red" }}
                         />
                         { errors.email && <p className="errors" >{errors.email.message}</p> } 
-                    </div>
+                            </div>*/}
                     <div>
                         <label htmlFor="password1"></label>
                         <input

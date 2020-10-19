@@ -1,19 +1,30 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import axios from "axios";
 import Heading from "../Heading";
 import Footer from "../Footer";
 
 
 const SignUp = (props) => {
-
+    const history = useHistory();
     const { register, handleSubmit, errors, getValues, formState : { isDirty, isSubmitting }} = useForm({
         mode: "onChange",
         });
-    const onSubmit = (data, e) => {
+    const onSubmit = async(data, e) => {
         e.preventDefault();
         console.log("Data Submitted", data);
         // Api call here
+        await axios
+            .post("https://cors-anywhere.herokuapp.com/http://api-rent365.herokuapp.com/accounts/api/auth/register", data)
+            .then((res) => {
+                console.log(res.data)
+                if(res.data.token){
+                    history.push("/account/signin")
+                }
+            }).catch((error) => {
+                console.log(error)
+            });
     };
 
     return (
