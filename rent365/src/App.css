@@ -283,7 +283,7 @@ button {
   padding: 0.1rem;
 }
 .minusBtn, .addBtn {
-  background-color: #000;
+  background-color: #FFF3E0;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 4px 7px;
 }
@@ -291,12 +291,15 @@ button {
   background-color: #FF3300;
 }
 .minusBtn:focus, .addBtn:focus {
-  background-color: #FF3300;
   outline: none;
 }
 .feather-minus, .feather-plus {
+  stroke: #000;
+}
+.feather-minus:hover, .feather-plus:hover {
   stroke: #fff;
 }
+
 /**Footer*/
 .footer {
   position: relative;
