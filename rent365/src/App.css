@@ -132,7 +132,7 @@ button {
   border: 1px solid #c7c7cd;
   padding: 0.2rem 2rem;
   width: 400px;
-  max-width: 100%;
+  max-width: 90%;
   z-index: 1;
   background: url("./images/icons/search\(1\).svg") no-repeat left 5px center
 }
@@ -205,7 +205,7 @@ button {
 
 /**Cart*/
 .cartSection {
-  
+  min-height: 80vh;
   margin-top: 5rem;
 }
 .shopCart {
@@ -305,7 +305,10 @@ button {
 
 /**Footer*/
 .footer {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   bottom: 0;
   width: 100%;
 }
