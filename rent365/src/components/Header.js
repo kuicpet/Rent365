@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
+import axios from "axios";
 
 
 const Header = () => {
     const history = useHistory();
+    const [user, setUser] = useState([]);
 
-    const isLoggedIn = () => {
-        let user = localStorage.getItem("jwtToken");
+
+    const isLoggedIn = (props) => {
+        let user = localStorage.getItem("user");
         let loggedInUser = JSON.parse(user);
+        console.log(loggedInUser);
         return loggedInUser !== null;
     };
+
 
     const signOut = () => {
         localStorage.removeItem("user");
@@ -30,7 +35,7 @@ const Header = () => {
                           <Nav.Link>
                               <Link to="/" className="mx-5 home">Home</Link>
                           </Nav.Link>
-                          <Navbar.Text>Signed in as: <span>John Doe</span></Navbar.Text>
+                          <Navbar.Text>Signed in as: <span></span></Navbar.Text>
                           <Nav.Link>
                               <Link
                                 to="/"
