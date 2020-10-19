@@ -93,11 +93,12 @@ const SignIn = (props) => {
                         Login
                     </button>
                 </form>
+                <div className="text-center col-sm-12">
+                    <p>Don't have an account?</p>
+                    <Link to="/account/signup" className="signin">Register</Link>
+                </div>
             </div>
-            <div className="text-center col-sm-12">
-                <p>Don't have an account?</p>
-                <Link to="/account/signup" className="signin">Register</Link>
-            </div>
+            
             <Footer/>
         </div>
     );

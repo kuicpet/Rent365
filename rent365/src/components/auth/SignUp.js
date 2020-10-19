@@ -108,10 +108,10 @@ const SignUp = (props) => {
                         Register
                     </button>
                 </form>
-            </div>
-            <div className="text-center col-sm-12">
-                <p>Already have an account?</p>
-                <Link to="/account/signin" className="signin">Login</Link>
+                <div className="text-center col-sm-12">
+                    <p>Already have an account?</p>
+                    <Link to="/account/signin" className="signin">Login</Link>
+                </div>
             </div>
             <Footer/>
         </div>

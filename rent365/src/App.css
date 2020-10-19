@@ -18,6 +18,7 @@ body {
   justify-content: center;
   line-height: 1.5;
   width: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
@@ -158,6 +159,7 @@ button {
 /**SignUp*/
 .signup {
   margin-top: 7rem;
+  min-height: 100vh;
 }
 .username, .email, .pswd {
   width: 20rem;
@@ -241,6 +243,7 @@ button {
   align-items: center;
   padding: 1rem;
   margin: 1rem;
+  min-height: 100vh;
 }
 @media only screen and (max-width: 400px) {
   .products {
@@ -302,7 +305,7 @@ button {
 
 /**Footer*/
 .footer {
-  position: relative;
+  
   bottom: 0;
   width: 100%;
 }
