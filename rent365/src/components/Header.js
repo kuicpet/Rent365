@@ -38,12 +38,11 @@ const Header = () => {
                           <Nav.Link>
                               <Link to="/" className="mx-5 home">Home</Link>
                           </Nav.Link>
-                          <Navbar.Text>Signed in as: <span>{user.username}</span></Navbar.Text>
-                          <NavDropdown title="My Account">
+                          <NavDropdown title="Account">
                               <NavDropdown.Item>
                                 <Link to="/account" className="text-center account">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                                    <span className="mx-2">Account</span>
+                                    <span className="mx-2">My Account</span>
                                 </Link>
                               </NavDropdown.Item>
                               <NavDropdown.Item>
@@ -60,9 +59,15 @@ const Header = () => {
                               </NavDropdown.Item>
                           </NavDropdown>
                           <Nav.Link>
+                              <Link to="/cart" className="mx-2 cart">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                  <span className="mx-2">Cart</span>
+                              </Link>
+                          </Nav.Link>
+                          <Nav.Link>
                               <Link
                                 to="/"
-                                className="mx-2 signout"
+                                className="mx-2 signout text-center px-3 py-1 signOutBtn"
                                 onClick={() => signOut()}
                               >Sign Out</Link>
                           </Nav.Link>
@@ -72,12 +77,12 @@ const Header = () => {
                           <Nav.Link>
                               <Link to="/" className="mx-5 home">Home</Link>
                           </Nav.Link>
-                          <NavDropdown title="Login" class="drop">
+                          <NavDropdown title="Login" className="drop">
                             <NavDropdown.Item className="my-1">
-                                <Link to="/account/signin" className="text-center signinBtn px-5 py-1 signinBtn">Login</Link>
+                                <Link to="/account/signin" className="text-center px-5 py-2 signinBtn">Login</Link>
                             </NavDropdown.Item>
                             <NavDropdown.Item>
-                                <Link to="/account/signup" className="text-center signupBtn px-3 py-1 signupBtn">Create an Account</Link>
+                                <Link to="/account/signup" className="text-center px-3 py-2 signupBtn">Create an Account</Link>
                             </NavDropdown.Item>
                             <NavDropdown.Divider/>
                             <NavDropdown.Item>
