@@ -33,7 +33,7 @@ const Header = () => {
              <Navbar.Toggle aria-controls="basic-navbar-nav"/>
              <Navbar.Collapse id="basic-navbar-nav">
                  <Nav className="ml-auto text-center">
-                     {user ? (
+                     {isLoggedIn() && user ? (
                         <Nav>
                           <Nav.Link>
                               <Link to="/" className="mx-5 home">Home</Link>
