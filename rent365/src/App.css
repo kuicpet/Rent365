@@ -314,6 +314,15 @@ button {
   stroke: #fff;
 }
 
+/**Dashboard*/
+.orderSection,
+.accountSection,
+.savedItemSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 /**Footer*/
 .footer {
   display: flex;
