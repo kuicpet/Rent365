@@ -1,27 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
-import axios from "axios";
+
 
 
 const Header = () => {
     const history = useHistory();
-    const [user, setUser] = useState([]);
+    const [user, setUser] = useState();
 
 
-    const isLoggedIn = (props) => {
+    const isLoggedIn = () => {
         let user = localStorage.getItem("user");
         let loggedInUser = JSON.parse(user);
         console.log(loggedInUser);
         return loggedInUser !== null;
     };
 
+    useEffect(() => {
+        setUser(isLoggedIn)
+    },[])
 
     const signOut = () => {
         localStorage.removeItem("user");
         return history.push("/");
     }
-
+    
     return (
          <Navbar bg="light" expand="lg" fixed="top">
              <Navbar.Brand>
@@ -30,12 +33,12 @@ const Header = () => {
              <Navbar.Toggle aria-controls="basic-navbar-nav"/>
              <Navbar.Collapse id="basic-navbar-nav">
                  <Nav className="ml-auto text-center">
-                     {isLoggedIn() ? (
+                     {user ? (
                         <Nav>
                           <Nav.Link>
                               <Link to="/" className="mx-5 home">Home</Link>
                           </Nav.Link>
-                          <Navbar.Text>Signed in as: <span></span></Navbar.Text>
+                          <Navbar.Text>Signed in as: <span>{user.username}</span></Navbar.Text>
                           <Nav.Link>
                               <Link
                                 to="/"
