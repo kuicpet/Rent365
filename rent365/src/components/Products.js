@@ -19,7 +19,10 @@ const Products = () => {
       <div className="products mb-5">
           {data.map((item, index) => (
             <div key={index} className="col-sm-12 col-md-4 col-lg-4 product">
-              <Link>
+              <Link to={{
+                pathname: `/product/${item.title}`,
+                state: {item: item.title}
+              }}>
                   <img
                     src={item.item_pic}
                     alt={item.title}
