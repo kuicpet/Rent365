@@ -14,7 +14,7 @@ import SavedItems from "./Saved-Items";
 const isLoggedIn = () => {
     return localStorage.getItem("user") !== null;
 };
-const SecureRoute = ({ component: Component, ...rest }) => {
+/** const SecureRoute = ({ component: Component, ...rest }) => {
     return (
         <Route 
           {...rest}
@@ -25,7 +25,7 @@ const SecureRoute = ({ component: Component, ...rest }) => {
           )}
         />
     );
-};
+};**/
 
 class Router extends Component {
     render() {
