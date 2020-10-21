@@ -334,9 +334,17 @@ button {
 .nav-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: justify;
+  width: 100%;
+}
+.item {
+  color: #000;
+}
+.item:hover {
+  background-color: #ededed;
+  text-decoration: none;
+  color: #000;
 }
 /**Footer*/
 .footer {
