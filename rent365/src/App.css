@@ -81,6 +81,7 @@ button {
 .signOutBtn {
   background-color: #000;
   color: #fff;
+  border-radius: 5px;
 }
 .signOutBtn:hover {
   background-color: #FF3300;
@@ -92,6 +93,7 @@ button {
   background-color: rgba(0,0,0,0.1);
   color: #000;
   border: 1px solid #000;
+  border-radius: 5px;
 }
 .signinBtn:hover {
   background-color: #000;
@@ -103,6 +105,7 @@ button {
   background-color: #FFF3E0;
   color: #000;
   border: 1px solid #FF3300;
+  border-radius: 5px;
 }
 .signupBtn:hover {
   background-color: #FF3300;
@@ -325,11 +328,15 @@ button {
 }
 /**Side-Nav*/
 .side-nav {
-  border: 1px solid #000;
   margin-top: 6rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
   min-height: 10vh;
+  border-radius: 0px;
+  border-radius: 0px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  20px 20px 60px #d9d9d9, 
+               -20px -20px 60px #ffffff;
 }
 .acct-items {
   display: flex;
@@ -342,7 +349,6 @@ button {
   color: #000;
 }
 .item:hover {
-  background-color: #ededed;
   text-decoration: none;
   color: #FF3300;
 }
