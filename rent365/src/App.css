@@ -323,6 +323,21 @@ button {
   justify-content: center;
   min-height: 100vh;
 }
+/**Side-Nav*/
+.side-nav {
+  border: 1px solid #000;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  min-height: 10vh;
+}
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
 /**Footer*/
 .footer {
   display: flex;
