@@ -325,8 +325,6 @@ button {
 .accountSection,
 .savedItemSection {
   display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   margin-top: 6rem;
   margin-left: 2rem;
@@ -335,12 +333,13 @@ button {
   box-shadow:  20px 20px 60px #d9d9d9, 
                -20px -20px 60px #ffffff;
 }
+
 /**Side-Nav*/
 .side-nav {
   margin-top: 6rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
-  min-height: 10vh;
+  min-height: 100vh;
   border-radius: 0px;
   border-radius: 0px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
@@ -369,7 +368,7 @@ button {
   width: 50%;
   background-color: #000;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   box-shadow: 0 4px 14px 0 rgba(0,0,0,0.2);
 }
 .itemSignOut:hover {

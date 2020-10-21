@@ -9,7 +9,7 @@ const Order = () => {
             <Header />
             <SideNav/>
             <div className="col-sm-12 col-md-8 col-lg-8 orderSection">
-                <h3>Orders</h3>
+                <h5 className="m-3">Orders</h5>
             </div>
             <Footer />
         </div>

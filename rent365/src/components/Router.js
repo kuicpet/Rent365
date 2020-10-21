@@ -1,5 +1,5 @@
 import React, { Component, Suspense } from "react";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ReactLoading from "react-loading";
 
 import App from "../App";
@@ -11,10 +11,10 @@ import Account from "./Account";
 import Order from "./Order";
 import SavedItems from "./Saved-Items";
 
-const isLoggedIn = () => {
+/**const isLoggedIn = () => {
     return localStorage.getItem("user") !== null;
 };
-/** const SecureRoute = ({ component: Component, ...rest }) => {
+ const SecureRoute = ({ component: Component, ...rest }) => {
     return (
         <Route 
           {...rest}

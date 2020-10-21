@@ -18,7 +18,7 @@ const Header = () => {
 
     useEffect(() => {
         setUser(user)
-    },[])
+    },[user])
 
     const signOut = () => {
         localStorage.removeItem("user");

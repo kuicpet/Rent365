@@ -9,7 +9,7 @@ const SavedItems = () => {
             <Header/>
             <SideNav/>
             <div className="col-sm-12 col-md-8 col-lg-8 savedItemSection">
-                <h3>Saved Items</h3>
+                <h5 className="m-3">Saved Items</h5>
             </div>
             <Footer/>
         </div>

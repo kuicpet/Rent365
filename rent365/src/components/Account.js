@@ -3,15 +3,16 @@ import Header from "./Header";
 import Footer from "./Footer";
 import SideNav from "./SideNav";
 
+
 const Account = () => {
     return (
         <div className="row text-center">
-            <Header />
+            <Header/>
             <SideNav/>
             <div className="col-sm-12 col-md-8 col-lg-8 accountSection">
-                <h3>Account</h3>
+                <h5 className="m-3">Account</h5>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 };
