@@ -78,11 +78,11 @@ const Header = () => {
                               <Link to="/" className="mx-5 home">Home</Link>
                           </Nav.Link>
                           <NavDropdown title="Login" className="drop">
-                            <NavDropdown.Item className="my-1">
-                                <Link to="/account/signin" className="text-center px-5 py-2 signinBtn">Login</Link>
+                            <NavDropdown.Item className="my-2">
+                                <Link to="/account/signin" className="text-center px-5 py-1 signinBtn">Login</Link>
                             </NavDropdown.Item>
-                            <NavDropdown.Item>
-                                <Link to="/account/signup" className="text-center px-3 py-2 signupBtn">Create an Account</Link>
+                            <NavDropdown.Item className="my-2">
+                                <Link to="/account/signup" className="text-center px-3 py-1 signupBtn">Create an Account</Link>
                             </NavDropdown.Item>
                             <NavDropdown.Divider/>
                             <NavDropdown.Item>

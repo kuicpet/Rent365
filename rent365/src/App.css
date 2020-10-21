@@ -331,7 +331,7 @@ button {
   margin-bottom: 2rem;
   min-height: 10vh;
 }
-.nav-items {
+.acct-items {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -344,7 +344,7 @@ button {
 .item:hover {
   background-color: #ededed;
   text-decoration: none;
-  color: #000;
+  color: #FF3300;
 }
 /**Footer*/
 .footer {
