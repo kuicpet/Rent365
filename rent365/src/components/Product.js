@@ -7,8 +7,9 @@ const Product = () => {
     const [item, setItem] = useState([]);
 
     useEffect(() => {
+        
         axios
-          .get("https://cors-anywhere.herokuapp.com/http://api-rent365.herokuapp.com/shop/api/item-detail/1")
+          .get(`https://cors-anywhere.herokuapp.com/http://api-rent365.herokuapp.com/shop/api/item-detail/`)
           .then(result => {
               console.log(result.data);
               setItem(result.item)
@@ -19,7 +20,7 @@ const Product = () => {
         <div className="row product">
             <Header/>
             <div className="col-sm-12">
-                <h3>Product</h3>
+                <h3>{item}</h3>
             </div>
             <Footer/>
         </div>
