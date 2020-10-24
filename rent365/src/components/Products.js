@@ -12,8 +12,8 @@ const Products = () => {
     useEffect(() => {
       axios
         .get("https://cors-anywhere.herokuapp.com/http://api-rent365.herokuapp.com/shop/api/items-list")
-        .then(result => setData(result.data));
-    },[]);
+        .then(result => setData(result.data), localStorage.setItem("products", JSON.stringify(data)));
+    },[data]);
     
     return (
       <div className="products mb-5">
