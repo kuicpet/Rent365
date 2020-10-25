@@ -12,7 +12,7 @@ const Header = () => {
     const isLoggedIn = () => {
         let user = localStorage.getItem("user");
         let loggedInUser = JSON.parse(user);
-        console.log(loggedInUser);
+        // console.log(loggedInUser);
         return loggedInUser !== null;
     };
 

@@ -31,7 +31,7 @@ const SignUp = (props) => {
         <div className="row text-center">
             <Heading />
             <div className="col-sm-12 signup">
-                <h3>Rent365 | Sign up</h3>
+                <h3>Wecome to Rent365</h3>
                 <p>Create your Rent365 account! </p>
                 <form onSubmit={handleSubmit(onSubmit)} className="mt-3">
                     <div>

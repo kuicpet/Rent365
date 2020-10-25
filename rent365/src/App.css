@@ -176,7 +176,7 @@ button {
 /**SignUp*/
 .signup {
   margin-top: 7rem;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 .username, .email, .pswd {
   width: 20rem;
@@ -256,10 +256,8 @@ button {
 /**Products*/
 .products {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 1rem;
-  margin: 1rem;
+  justify-content: center;
   min-height: 100vh;
 }
 @media only screen and (max-width: 400px) {
@@ -281,14 +279,24 @@ button {
 .add_cart:hover {
   background-color: #000;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  text-decoration: none;
+  color: #fff;
 }
 .product {
   display: flex;
+  max-width: 90%;
   flex-direction: column;
   align-items: center;
   padding: 0 0 1rem 0;
   margin: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  height: 400px;
+}
+.prdt_name {
+  text-transform: capitalize;
+}
+.prdt_img {
+  max-width: 70%;
+  padding: 0;
 }
 .counter {
   display: flex;

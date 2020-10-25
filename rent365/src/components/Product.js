@@ -1,30 +1,18 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Header from "./Header";
+import React, { Component } from "react";
 import Footer from "./Router";
 
-const Product = () => {
-    const [item, setItem] = useState([]);
+class Product extends Component {
 
-    useEffect(() => {
-        
-        axios
-          .get(`https://cors-anywhere.herokuapp.com/http://api-rent365.herokuapp.com/shop/api/item-detail/`)
-          .then(result => {
-              console.log(result.data);
-              setItem(result.item)
-          })
-    },[]);
-
-    return (
-        <div className="row product">
-            <Header/>
-            <div className="col-sm-12">
-                <h3>{item}</h3>
+    render() {
+        return (
+            <div className="row">
+                <div className="col-sm-12">
+                    <h3>Product Component</h3>
+                </div>
+                <Footer />
             </div>
-            <Footer/>
-        </div>
-    );
+        );
+    };
 }
 
 export default Product;

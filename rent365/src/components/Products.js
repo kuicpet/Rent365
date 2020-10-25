@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Counter from "./Counter";
-
-
 
 
 const Products = () => {
@@ -16,22 +13,22 @@ const Products = () => {
     },[data]);
     
     return (
-      <div className="products mb-5">
+      <div className="row products my-5">
           {data.map((item, index) => (
-            <div key={index} className="col-sm-12 col-md-4 col-lg-4 product">
-                  <img
+            <div key={index} className="col-sm-12 col-md-2 col-lg-3 product">
+              <Link to={{
+                pathname: `/product/${item.id}`
+              }}>
+                <img
                     src={item.item_pic}
                     alt={item.title}
                     className="prdt_img img-fluid"
                   />
+              </Link>
               <h5 className="prdt_name mt-3">{item.title}</h5>
               <p className="prdt_price">${item.price}</p>
-              <Link to={{
-                pathname: `/product/${item.id}`,
-                state: {item: item.id}
-              }}>View Product</Link>
-              <Counter/>
-              <button className="add_cart">Add to Cart</button>
+              <p>{item.description}</p>
+              <Link to="/cart" className="add_cart">Add to cart</Link>
             </div>
           ))}
       </div>
