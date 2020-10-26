@@ -77,7 +77,7 @@ const Header = () => {
                           <Nav.Link>
                               <Link to="/" className="mx-5 home">Home</Link>
                           </Nav.Link>
-                          <NavDropdown title="Login" className="drop mr-auto">
+                          <NavDropdown title="Login" className="drop">
                             <NavDropdown.Item className="my-2">
                                 <Link to="/account/signin" className="text-center px-5 py-1 signinBtn">Login</Link>
                             </NavDropdown.Item>

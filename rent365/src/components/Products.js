@@ -81,6 +81,7 @@ const Products = () => {
     </>
     )
     return (
+      <div className="container-fluid">
       <div className="row  products my-5">
         <div className="col-sm-12 my-5">
           <button onClick={() => navigateTo(PAGE_CART)} className="add_cart">
@@ -91,6 +92,7 @@ const Products = () => {
         </div>
           {page === PAGE_PRODUCTS && renderProducts()}
           {page === PAGE_CART && renderCart()}
+      </div>
       </div>
     );
 }
