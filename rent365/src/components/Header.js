@@ -7,7 +7,7 @@ import { Link, useHistory } from "react-router-dom";
 const Header = () => {
     const history = useHistory();
     const [user, setUser] = useState();
-
+    
 
     const isLoggedIn = () => {
         let user = localStorage.getItem("user");
@@ -26,7 +26,7 @@ const Header = () => {
     }
     
     return (
-         <Navbar bg="light" expand="lg" fixed="top">
+         <Navbar bg="light" expand="lg">
              <Navbar.Brand>
                  <Link to="/" className="navbar-brand">Rent365</Link>
              </Navbar.Brand>
@@ -58,16 +58,16 @@ const Header = () => {
                                   </Link>
                               </NavDropdown.Item>
                           </NavDropdown>
-                          <Nav.Link>
+                          {/*<Nav.Link>
                               <Link to="/cart" className="mx-2 cart">
                               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                                   <span className="mx-2">Cart</span>
                               </Link>
-                          </Nav.Link>
+                          </Nav.Link>*/}
                           <Nav.Link>
                               <Link
                                 to="/"
-                                className="mx-2 signout text-center px-3 py-1 signOutBtn"
+                                className="mx-5 signout text-center px-3 py-1 signOutBtn"
                                 onClick={() => signOut()}
                               >Sign Out</Link>
                           </Nav.Link>
@@ -77,7 +77,7 @@ const Header = () => {
                           <Nav.Link>
                               <Link to="/" className="mx-5 home">Home</Link>
                           </Nav.Link>
-                          <NavDropdown title="Login" className="drop">
+                          <NavDropdown title="Login" className="drop mr-auto">
                             <NavDropdown.Item className="my-2">
                                 <Link to="/account/signin" className="text-center px-5 py-1 signinBtn">Login</Link>
                             </NavDropdown.Item>
@@ -93,14 +93,14 @@ const Header = () => {
                             </NavDropdown.Item>
                             <NavDropdown.Item>
                                 <Link to="/saved-items" className="text-center saved-items">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                                     <span className="mx-2">Saved Items</span>
                                 </Link>
                             </NavDropdown.Item>
                           </NavDropdown>
                           <Nav.Link>
                               <Link to="/cart" className="mx-5 cart">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                                   <span className="mx-2">Cart</span>
                               </Link>
                           </Nav.Link>

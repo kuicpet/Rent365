@@ -41,7 +41,7 @@ class Router extends Component {
                 <BrowserRouter>
                     <Switch>
                         <Route path="/" component={ App } exact/>
-                        <Route path="/product" component={ Product } />
+                        <Route path="/product/:id" component={ Product } />
                         <Route path="/account/signup" component={ SignUp } />
                         <Route path="/account/signin" component={ SignIn } />
                         

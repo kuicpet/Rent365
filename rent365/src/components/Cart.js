@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 
 const Cart = () => {
+   
     return (
         <div className="row text-center">
             <Header/>
