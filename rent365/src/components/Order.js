@@ -5,13 +5,15 @@ import SideNav from "./SideNav";
 
 const Order = () => {
     return (
-        <div className="row  text-center">
+        <div className="container-fluid">
             <Header />
-            <SideNav/>
-            <div className="col-sm-12 col-md-8 col-lg-8 orderSection">
-                <h5 className="m-3">Orders</h5>
+            <div className="row  text-center">
+                <SideNav/>
+                <div className="col-sm-12 col-md-8 col-lg-8 orderSection">
+                    <h5 className="m-3">Orders</h5>
+                </div>
+                <Footer />
             </div>
-            <Footer />
         </div>
     );
 };
